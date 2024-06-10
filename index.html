@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        label {
+            font-weight: bold;
+        }
+    
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+    
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <form id="personForm">
+        <label for="name" >Name:</label>
+        <input type="text" id="name" required><br><br>
+    
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+    
+        <label for="address">Address:</label>
+        <input type="text" id="address" required><br><br>
+    
+        <label for="education">Education:</label>
+        <select id="education" required>
+            <option value="">Select Education</option>
+            <option value="High School">High School</option>
+            <option value="Bachelor's Degree">Bachelor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+    
+        <label for="profession">Profession:</label>
+        <select id="profession" required>
+            <option value="">Select Profession</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Teacher">Teacher</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+    
+        <button type="button" onclick="addPerson()">Add Person</button>
+    </form>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
